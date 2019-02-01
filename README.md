@@ -1,11 +1,8 @@
-## Web Developement
-This repo Contains example applications developed using different web technologies.
+## Web Development
+A small application implmented using different web technologies.
 
-## Example One
-ReactJs - bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Technologies Used:
-- React
+## Example 01
+- React (bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app))
 - Redux
 - React Router
 - Redux Saga
@@ -13,11 +10,8 @@ Technologies Used:
 - Immutable
 - Semantic UI (React)
 
-## Example Two
-ReactJs - bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Technologies Used:
-- React
+## Example 02
+- React (bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app))
 - Redux
 - React Router
 - RxJs
@@ -26,10 +20,7 @@ Technologies Used:
 - Immutable
 - Semantic UI (React)
 
-## Example Two
-ReactJs - bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Technologies Used:
+## Example 03
 - TypeScript
 - React
 - Redux
