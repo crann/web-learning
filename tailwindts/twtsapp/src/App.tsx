@@ -4,7 +4,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="m-52">
+    <div className="m-10">
       <BrowserRouter>
         <Switch>
           {/* <Route path="/signup">
