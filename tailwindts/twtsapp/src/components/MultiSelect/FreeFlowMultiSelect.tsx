@@ -1,7 +1,8 @@
-import React, { FC, ReactElement, useState } from 'react';
+import React, { FC, MutableRefObject, ReactElement, useRef, useState } from 'react';
 import PillButton from '../Buttons/PillButton';
 
 const FreeFlowMultiSelect: FC<{}> = (props) => {
+    const inputElement = useRef() as MutableRefObject<HTMLInputElement>;
     const [hasFocus, setHasFocus] = useState<boolean>(false);
     const [pills, setPills] = useState<ReactElement[]>([])
 
@@ -16,7 +17,9 @@ const FreeFlowMultiSelect: FC<{}> = (props) => {
 
     return (
         <>
-            <div className={`flex w-72 rounded cursor-text ${hasFocus ? "border-2 border-blue-500" : "border border-gray-400 hover:border-gray-600"}`}>
+            <div
+                onClick={() => inputElement.current.focus()}
+                className={`flex w-72 rounded cursor-text ${hasFocus ? "border-2 border-blue-500" : "border border-gray-400 hover:border-gray-600"}`}>
                 <div className="flex-grow px-2 py-2">
                     <span className="pr-1">
                         <PillButton
@@ -35,6 +38,7 @@ const FreeFlowMultiSelect: FC<{}> = (props) => {
                         className="h-10 outline-none"
                         onFocus={_ => setHasFocus(true)}
                         onBlur={_ => setHasFocus(false)}
+                        ref={inputElement}
                     />
                 </div>
                 <div className="flex-grow-0 flex justify-center items-center w-12 rounded-r text-center pr-1">
