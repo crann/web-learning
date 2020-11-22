@@ -3,6 +3,7 @@ import FilledButton from '../components/Buttons/FilledButton';
 import OutlinedButton from '../components/Buttons/OutlinedButton';
 import PillButton from '../components/Buttons/PillButton';
 import Input from '../components/Input';
+import FreeFlowMultiSelect from '../components/MultiSelect/FreeFlowMultiSelect';
 import Pill from '../components/Pill';
 
 const Home: FC<{}> = (props) => {
@@ -21,8 +22,14 @@ const Home: FC<{}> = (props) => {
                 <Pill />
             </div>
             <div className="pl-10 pt-10">
-                <div className="py-14 w-52 flex">
-                    <PillButton />
+                <div className="py-14 w-32 flex">
+                    <PillButton text="my really long pi;;" />
+                </div>
+            </div>
+
+            <div className="pl-10 pt-10">
+                <div className="py-14 w-52">
+                    <FreeFlowMultiSelect />
                 </div>
             </div>
         </>
