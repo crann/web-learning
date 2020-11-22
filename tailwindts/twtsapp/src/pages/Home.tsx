@@ -21,11 +21,11 @@ const Home: FC<{}> = (props) => {
             <div className="pl-10 pt-10">
                 <Pill />
             </div>
-            <div className="pl-10 pt-10">
+            {/* <div className="pl-10 pt-10">
                 <div className="py-14 w-32 flex">
                     <PillButton text="my really long pi;;" />
                 </div>
-            </div>
+            </div> */}
 
             <div className="pl-10 pt-10">
                 <div className="py-14 w-52">
